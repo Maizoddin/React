@@ -1,0 +1,68 @@
+1] Creating element using JS and adding it to DOM
+
+<html>
+  <head>
+    <title>Episode-1</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      const root = document.getElementById("root");
+      const heading = document.createElement("h1");
+      heading.innerText = "Test";
+      root.appendChild(heading);
+    </script>
+  </body>
+</html>
+
+--------------------------------------------------------------------------
+2] Importing React, ReactDOM from CDN 
+
+<html>
+  <head>
+    <title>Episode-1</title>
+  </head>
+  <body>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+  </body>
+</html>
+
+--------------------------------------------------------------------------
+3] Creating Element using React, creating Root using ReactDOM and rendering
+<html>
+  <head>
+    <title>Episode-1</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script>
+      const heading = React.createElement("h1", {id:"head"}, "Test");
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(heading);
+    </script>
+  </body>
+</html>
+
+React.createElement takes 3 arguments :
+ a] Tag name
+ b] Properties(Attributes)
+ c] Children   Or array of children
+
+Note : React.createElement creates js object and render methode converts that object into HTML tag. 
+If there is anything inside our root then render methode will replace that.
+--------------------------------------------------------------------------

@@ -1,0 +1,42 @@
+
+1]git init         --->  This command initializes a local Git repository in our current folder.
+2]git branch -M main    --->  renames the default branch from "master" to "main."
+                             [I can use any name]
+
+3]git add .                 ---> stages all the changes 
+
+4]git commit -m "version one"
+
+5]git remote add origin https://github.com/Maizoddin/React.git
+  to add a remote repository to your local Git configuration
+  Note : i can give any name for my remote url repository
+         Example : git remote add remoteRepository https://github.com/Maizoddin/React.git
+
+6] git push -u origin main
+   to push your local branch named "main" to the remote repository named "origin."
+  [Ex : git push -u remoteRepository main
+
+==================================
+
+* git status
+
+If i have changes any file then
+
+Ex :
+    git add index.html
+    git commit -m "Updated index.html"
+    git push 
+
+===============================
+.gitignore
+
+/node_modules
+
+Note : It ignores this files and won't push it to git
+
+=============================
+
+While adding next time just use 3 commands
+git add .
+git commit -m "version updated"
+git push -u origin main
