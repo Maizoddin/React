@@ -1,0 +1,9 @@
+React Version 18
+
+React-DOM is used for WEB
+React-Native is used for Mobile
+
+React is a Libarary [It means it can be applied only to portion of our app as well. Example : If complete application is built using JQUERY then we can apply react only to our header]
+
+In React we use JSX[JavaScript XML]
+
