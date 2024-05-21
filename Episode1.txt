@@ -66,3 +66,9 @@ React.createElement takes 3 arguments :
 Note : React.createElement creates js object and render methode converts that object into HTML tag. 
 If there is anything inside our root then render methode will replace that.
 --------------------------------------------------------------------------
+
+Ways to create react app
+1] create-react-app
+2] index.html -> use cdn links
+3] install parcel, react, react-dom
+   npx parcel index.html 
