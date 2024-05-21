@@ -69,6 +69,11 @@ If there is anything inside our root then render methode will replace that.
 
 Ways to create react app
 1] create-react-app
-2] index.html -> use cdn links
-3] install parcel, react, react-dom
+2] CDN 
+   create index.html
+   <script .....></script>
+   <script .....></script>
+   <script>React Code</script>
+3] PARCEL 
+   install parcel, react, react-dom
    npx parcel index.html 
